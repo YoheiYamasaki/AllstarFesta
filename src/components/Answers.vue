@@ -13,40 +13,33 @@
 
 import Answer from './Answer.vue'
 export default {
-name: 'Answers',
+  name: 'Answers',
   props: {
     msg: String
   },
   components:{
-      Answer
+    Answer
   },
   data: function(){
-      return {
-          AnswerItemList: [
-              {rank: 1, name: "Yohei", seconds:1.84},
-              {rank: 2, name: "Yohei", seconds:1.84},
-              {rank: 3, name: "Yohei", seconds:1.84},
-              {rank: 4, name: "Yohei", seconds:1.84},
-              {rank: 5, name: "Yohei", seconds:1.84},
-              {rank: 6, name: "Yohei", seconds:1.84},
-              {rank: 7, name: "Yohei", seconds:1.84},
-              {rank: 8, name: "Yohei", seconds:1.84},
-              {rank: 9, name: "Yohei", seconds:1.84},
-              {rank: 10, name: "Yohei", seconds:1.84},
-          ]
-      }
+    return {
+      AnswerItemList: [
+        {rank: 1, name: "Yohei", seconds:1.84},
+        {rank: 2, name: "Yohei", seconds:1.84},
+        {rank: 3, name: "Yohei", seconds:1.84},
+        {rank: 4, name: "Yohei", seconds:1.84},
+        {rank: 5, name: "Yohei", seconds:1.84},
+        {rank: 6, name: "Yohei", seconds:1.84},
+        {rank: 7, name: "Yohei", seconds:1.84},
+        {rank: 8, name: "Yohei", seconds:1.84},
+        {rank: 9, name: "Yohei", seconds:1.84},
+        {rank: 10, name: "Yohei", seconds:1.84},
+      ]
+    }
   }
 }
 </script>
 
 <style lang="scss">
-
-body {
-    background-image: url("/allstar_high_resolution.png");
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: center center;
-}
 
 .answer_all{
     width: 50%;
@@ -57,8 +50,8 @@ body {
     .answer-#{$i}{
         opacity: 0;
         animation-name: AppearAnswer;
-        animation-duration: 0.75s;
-        animation-delay: calc(0.25s *  (10 - #{$i}));
+        animation-duration: 0.5s;
+        animation-delay: calc(0.2s *  (10 - #{$i}));
         animation-fill-mode: forwards; //終了後のスタイルをそのまま使う
     }
 }

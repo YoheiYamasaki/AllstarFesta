@@ -23,7 +23,7 @@ name: 'Answer',
     background-color: blue;
     margin: 0.1em 0;
 
-    font-size: 2.5em;
+    font-size: 4em;
     color: honeydew;
     text-shadow: 0.08em 0.1em black;
     border: 2px solid;
